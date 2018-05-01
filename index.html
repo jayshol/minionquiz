@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Minion Quiz</title>
+    <link rel="stylesheet" href="flexGrid.css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+   <header role="banner">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">The Ultimate Minion Quiz</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center js-scoreDiv">
+          <h3>Question:</h3>
+          <span class="js-questionSpan">0/10</span>&nbsp;&nbsp;
+          <h3>Score:</h3>
+          <span class="js-scoreSpan">0</span>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <section class="startClass js-startScreen">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="startClass text-center">Ready to test your knowledge on minions?</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <button class="js-startButton btnClass" role="button">Let's start!</button>
+          </div>
+        </div>
+      </section>  
+      <section class="questionCls startClass">
+        <div class="row">
+          <div class="col-12">
+            <div class="questionDiv">
+              <form>
+                <fieldset >
+                  <legend></legend>
+                  <div>
+                  <label for="option1" class="ansSpan answerDiv">
+                    <input id="option1" type="radio" value="answerVal" name="answer" required /><span></span></label>
+                    <label for="option2" class="ansSpan answerDiv"><input id="option2" type="radio" value="answerVal" name="answer"  required /><span></span></label>
+                    <label for="option3" class="ansSpan answerDiv"><input id="option3" type="radio" value="answerVal" name="answer" required /><span></span></label>
+                    <label for="option4" class="ansSpan answerDiv"><input id="option4" type="radio" value="answerVal" name="answer" required /><span></span></label>
+                </div>
+                  <div class="text-center">
+                   <button id="submitButton" class="btnClass" type="submit">Submit</button>
+                </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <section class="startClass js-resultCls">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center resultDivCls">
+              <img src="" alt="success image" class="imageClass"/>
+              <h2></h2>
+              <h4>The correct answer is <span class="ansClass"></span></h4>
+              <button class="btnClass js-buttonNext">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="startClass js-finalCls">
+        <div class="row">
+          <div class="col-12">
+            <div class="text-center resultDivCls">
+              <img src="images/minion-finish.jpg" alt="result page image" class="imageClass"/>
+              <h2>You have scored <span class="resultSpan"></span></h2>
+              <button class="btnClass js-buttonRestart">Restart Quiz</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

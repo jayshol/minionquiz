@@ -1,0 +1,106 @@
+html{
+  background: url(images/minion-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+h3{
+  display: inline;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.startClass{
+  margin-top:40px;
+}
+
+
+.questionDiv{
+  max-width:80%;
+  margin:0 auto;
+  padding: 10px;
+ /* border: 2px solid yellow;  */
+  
+}
+
+fieldset{
+  margin:0;
+  border:0;
+  padding:0;
+}
+
+legend{
+  font-size: 24px;
+  font-weight: bold;
+  width:100%;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.js-resultCls{
+  display: none;
+}
+
+.js-finalCls{
+  display: none;
+}
+
+.btnClass{
+  padding: 10px;
+  background-color: gold;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-top: 25px;
+  width: auto;
+}
+
+.questionCls{
+  margin-top:30px;
+  display: none;
+}
+
+.answerDiv{
+  width: 95%;
+  background-color: white;
+  font-size: 18px;
+  padding: 7px;
+  margin: 15px;
+  display: inline-block;
+}
+
+.answerDiv:hover{
+  background-color: yellow;
+}
+
+.imageClass{
+  height: 100px;
+  width: 150px;
+  
+}
+
+.resultDivCls{
+  height: auto;
+  width: 70%;
+  background-color: lightblue;
+  padding: 15px;
+  margin: 0 auto;
+  border: 1px solid yellow;
+  border-radius : 7px;
+}
+
+.ansClass{
+  color: green;
+  font-size: 24px;
+}
+
+.wrongClass{
+  color:red;
+}
+
