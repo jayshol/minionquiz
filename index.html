@@ -19,9 +19,9 @@
       </div>
       <div class="row">
         <div class="col-12 text-center js-scoreDiv">
-          <h3>Question:</h3>
+          <h2>Question:</h2>
           <span class="js-questionSpan">0/10</span>&nbsp;&nbsp;
-          <h3>Score:</h3>
+          <h2>Score:</h2>
           <span class="js-scoreSpan">0</span>
         </div>
       </div>
@@ -45,14 +45,14 @@
             <div class="questionDiv">
               <form>
                 <fieldset >
-                  <legend></legend>
-                  <div>
-                  <label for="option1" class="ansSpan answerDiv">
-                    <input id="option1" type="radio" value="answerVal" name="answer" required /><span></span></label>
-                    <label for="option2" class="ansSpan answerDiv"><input id="option2" type="radio" value="answerVal" name="answer"  required /><span></span></label>
-                    <label for="option3" class="ansSpan answerDiv"><input id="option3" type="radio" value="answerVal" name="answer" required /><span></span></label>
-                    <label for="option4" class="ansSpan answerDiv"><input id="option4" type="radio" value="answerVal" name="answer" required /><span></span></label>
-                </div>
+                  <legend id="answerGroup"></legend>
+                    <div>
+                      <label for="option1" class="ansSpan answerDiv" id="answer1">
+                      <input id="option1" type="radio" value="answerVal" name="answer" required aria-labelledby="answerGroup answer1" /><span></span></label>
+                      <label for="option2" class="ansSpan answerDiv" id="answer2"><input id="option2" type="radio" value="answerVal" name="answer"  required aria-labelledby="answerGroup answer2" /><span></span></label>
+                      <label for="option3" class="ansSpan answerDiv" id="answer3"><input id="option3" type="radio" value="answerVal" name="answer" required aria-labelledby="answerGroup answer3" /><span></span></label>
+                      <label for="option4" class="ansSpan answerDiv" id="answer4"><input id="option4" type="radio" value="answerVal" name="answer" required aria-labelledby="answerGroup answer4" /><span></span></label>
+                    </div>
                   <div class="text-center">
                    <button id="submitButton" class="btnClass" type="submit">Submit</button>
                 </div>
@@ -68,7 +68,7 @@
             <div class="text-center resultDivCls">
               <img src="" alt="success image" class="imageClass"/>
               <h2></h2>
-              <h4>The correct answer is <span class="ansClass"></span></h4>
+              <h3>The correct answer is <span class="ansClass"></span></h3>
               <button class="btnClass js-buttonNext">Next</button>
             </div>
           </div>
